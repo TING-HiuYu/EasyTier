@@ -20,9 +20,8 @@ use crate::{
 pub mod direct;
 pub mod manual;
 pub mod udp_hole_punch;
-
-pub mod dns_connector;
 pub mod http_connector;
+pub mod multi_connector;
 
 async fn set_bind_addr_for_peer_connector(
     connector: &mut (impl TunnelConnector + ?Sized),
